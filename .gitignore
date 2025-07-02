@@ -1,0 +1,62 @@
+########################################
+# Rust & Cargo
+########################################
+
+# Ignore all target/ build outputs across the repo
+**/target/
+
+# If vendoring dependencies (with `cargo vendor`)
+**/vendor/
+
+# Ignore Cargo.lock in library crates only
+# (If the root is an app, remove this line)
+**/Cargo.lock
+
+# Ignore Cargo config directories
+**/.cargo/
+
+########################################
+# Editor & IDE settings
+########################################
+
+# VS Code
+.vscode/
+
+# IntelliJ / CLion / RustRover / etc.
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+*.un~
+
+# Emacs
+*~
+
+########################################
+# OS-specific files
+########################################
+
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+########################################
+# Logs and misc
+########################################
+
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+
+# Byebug/irb history (if used)
+.irb-history
+.byebug-history
